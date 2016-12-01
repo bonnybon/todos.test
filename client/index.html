@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Todo-list</title>
+    <link href="/client/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/client/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script src="/client/js/bootstrap.min.js"></script>
+</body>
+<div class="row">
+	<div class="col-lg-7">
+		<div class="row">
+			<div class="col-lg-12" id="addtodo">
+			<h1>Se proprio non puoi fare a meno...</h1>
+			<form>
+  				<div class="form-group">
+    				<label for="name">cosa fare</label>
+    				<input type="text" class="form-control" name="name" placeholder="todoname">
+  				</div>
+  				<div class="form-group">
+    				<label for="description">descrivi meglio</label>
+    				<input type="text" class="form-control" name="description" placeholder="description">
+  				</div>
+				<div class="radio">
+  					<label>
+    				<input type="radio" name="important" value="false" checked>
+    					non importante
+  					</label>
+				</div>
+				<div class="radio">
+  					<label>
+    				<input type="radio" name="important" value="true">
+    					importante
+  					</label>
+				</div>
+  				<button type="submit" class="btn btn-default">Aggiungi</button>
+			</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="listtodo">
+				<h1>Già devi fare questi</h1>
+				<TABLE width="100%">
+					<TR>
+						<TH>Cosa fare</TH>
+						<TH>Descrizione</TH>
+						<TH>Quando</TH>
+						<TH>Importante</TH>
+						<TH>Azione</TH>
+					</TR>
+					<TR>
+						<TD>Cosa fare</TD>
+						<TD>Descrizione</TD>
+						<TD>Quando</TD>
+						<TD>Importante</TD>
+						<TD>
+							<button type="button" class="btn btn-success btn-xs">fatto!</button>
+							<button type="button" class="btn btn-danger btn-xs">dimentica</button>
+						</TD>
+					</TR>
+				</TABLE>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-5" id="listdone">
+	<ul>
+		<li>FATTO 1</li>
+		<li>FATTO 2</li>
+	</ul>
+	</div>
+</div>
+</body>
+</html>
